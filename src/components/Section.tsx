@@ -1,4 +1,4 @@
-import React, { ReactNode, ForwardedRef, forwardRef } from 'react'
+import React, { ReactNode, forwardRef } from 'react'
 
 interface SectionProps {
   children: ReactNode
