@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* dark 模式自动切换背景 */
+.dark {
+    background-color: #111;
+    color: #eee;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    /* 使用 rgba 设置透明背景 */
+    color: #111;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    /* 可选：使背景有模糊效果 */
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    /* 使用 rgba 设置透明背景 */
+    color: #111;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    /* 可选：使背景有模糊效果 */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #111;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #6e1bdb;
+    color: #6e1bdb;
+}
+
+nav ul li a.active {
+    /* 高亮背景色 */
+    /* 高亮文字色 */
+    font-weight: bold;
+    border-bottom: 1px solid #6e1bdb;
+    /* 可选：加粗文字 */
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+p,
+ul {
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
